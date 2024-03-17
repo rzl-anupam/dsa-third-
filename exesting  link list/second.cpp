@@ -9,10 +9,10 @@ struct node {
 
 int main()
 {
-    struct node *head = (struct node*)malloc(sizeof(struct node))
+    struct node *head = (struct node*)malloc(sizeof(struct node));
     struct node *p1 = (struct node*)malloc(sizeof(struct node));
     struct node *p2 = (struct node*)malloc(sizeof(struct node));
-    struct node *p = (struct node*)malloc(sizeof(struct node));
+    struct node *p3 = (struct node*)malloc(sizeof(struct node));
 
     // filing data
     p1->data = 3;
@@ -26,7 +26,7 @@ int main()
         head->p = p1;
 
         struct node *temp = head->p;
-        while (temp ! = NULL)
+        while (temp = NULL)
         {
             printf("1");
             printf(" hey %d\n",temp->data);
