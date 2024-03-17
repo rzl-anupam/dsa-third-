@@ -6,9 +6,10 @@ struct node
  {
     struct node*head;
     struct node*tail;
-}
+      struct node*tail;
+};
     void insert(int data){
-        struct node *temp = (node)malloc(sizeof(struct node));
+        struct node *temp = ( struct node*)malloc(sizeof(struct node));
          temp-> data = data;
         if( tail == NULL){
          tail = temp;
